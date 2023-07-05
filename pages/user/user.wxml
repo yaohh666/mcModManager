@@ -1,0 +1,32 @@
+<!--pages/user/user.wxml-->
+<view class="userinfo">
+  <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取用户信息 </button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取用户信息 </button>
+  </block>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFit"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-role">普通用户</text>
+  </block>
+</view>
+
+<block wx:if="{{hasUserInfo}}">
+  <view class="image-box">
+    <navigator class="image-item" wx:for="{{gridlist}}" wx:key="id">
+      <image src="{{item.path}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <view class="text-image">
+    <view class="text-box">小程序用于帮助用户管理曾经玩过的我的世界版本和版本所包含的模组，方便用户在想再次游玩或者查找某版本内某个模组时提供帮助</view>
+    <view class="code-avatar">
+      <image src="/images/wx-code.jpg" mode="aspectFit" />
+      <text>助力码</text>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{hasUserInfo}}">
+  <button style="margin-top: 20rpx;background-color: rgb(117, 117, 117);color: white;" open-type="share">分享</button>
+</block>

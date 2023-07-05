@@ -1,0 +1,15 @@
+/* pages/addmod/addmod.wxss */
+.container {
+  width: 80%;
+  height: 100rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30%;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  border: 3rpx solid gray;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx rgb(184, 176, 176);
+}

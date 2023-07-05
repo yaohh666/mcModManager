@@ -1,0 +1,2 @@
+<!--pages/addmod/addmod.wxml-->
+<text class="container">此处连接后台数据库进行模组的增加</text>

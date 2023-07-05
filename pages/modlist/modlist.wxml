@@ -1,0 +1,9 @@
+<!--pages/modlist/modlist.wxml-->
+<text class="title-box">包含模组</text>
+
+<view class="modlist">
+  <view class="mod-item" wx:for="{{modList}}" wx:key="id">
+    <image src="/images/mod.png" mode="aspectFit"/>
+    <text>{{item.name}}</text>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/modlist/modlist",
+    "pages/addmod/addmod"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "游玩过的版本",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "版本",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/home-active.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "模组",
+      "iconPath": "/images/search.png",
+      "selectedIconPath": "/images/search-active.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "用户",
+      "iconPath": "/images/user.png",
+      "selectedIconPath": "/images/user-active.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

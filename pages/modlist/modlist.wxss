@@ -1,0 +1,43 @@
+/* pages/modlist/modlist.wxss */
+.title-box {
+  /* height: 100rpx;
+  width: 100rpx; */
+  margin-top: 200rpx;
+  margin-left: 40%;
+  margin-right: 10%;
+  margin-bottom: 20rpx;
+  border: 5rpx solid black;
+  background-color: rgb(114, 97, 97);
+  color: white;
+  box-shadow: 1rpx 1rpx 1rpx 5rpx gray;
+}
+
+.modlist {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  margin-left: 1%;
+  padding-bottom: 1%;
+  margin-right: 1%;
+  background-color: rgb(207, 205, 205);
+  border: 5rpx solid black;
+  box-shadow: 10rpx 10rpx 10rpx 10rpx gray;
+}
+
+.mod-item {
+  border: 5rpx solid rgb(173, 173, 173);
+  margin-top: 10rpx;
+  margin-bottom: 1rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx rgb(158, 156, 156);
+}
+
+.mod-item image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.mod-item text {
+  font-weight: 600;
+  margin-top: 10rpx;
+}

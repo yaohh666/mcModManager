@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图区域 -->
+<swiper indicator-dots circular indicator-active-color="white" autoplay interval="3000">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.url}}" mode="" />
+  </swiper-item>
+</swiper>
+
+<!-- 版本区域 -->
+<view class="versions-box">
+  <navigator class="versions-item" wx:for="{{versionsList}}" wx:key="id" url="/pages/modlist/modlist?id={{item.id}}&title={{item.name}}" >
+    <image src="/images/versions.png"/>
+    <text class="versions-text" url="/pages/search/search">{{item.name}}</text>
+    <!-- <image src="/images/versions.png"/> -->
+  </navigator>
+</view>
+
+<!-- 添加模组与版本区域 -->
+<navigator url="/pages/addmod/addmod" class="addmod">添加版本与对应模组</navigator>
